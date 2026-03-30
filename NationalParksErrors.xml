@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NationalPark>  <!-- ERROR #1: wrong root name -->
+
+  <NationalPark Rating="0.9">
+    <Name>Bad Park</Name>
+    <Name>Duplicate Name</Name> <!-- ERROR #5 -->
+    <!-- ERROR #3: missing Phone element -->
+    <Address> <!-- ERROR #4: missing closing tag -->
+      <Number>1</Number>
+      <Street>Main St</Street>
+      <City>Nowhere</City>
+      <State>ZZ</State>
+      <Zip>00000</Zip>
+      <!-- ERROR #2: missing required NearestAirport attribute -->
+  </NationalPark>
+
+</NationalPark>
